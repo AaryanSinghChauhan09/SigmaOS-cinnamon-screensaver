@@ -14,17 +14,6 @@ cargo fmt --all -- --check
 cargo check --all-targets
 ```
 
-Part of SigmaOS multi-repository architecture.
-
-## Inspiration
-
-This component is inspired by Linux Mint and Omarchy Linux to provide:
-- Single responsibility: One clear purpose
-- Loose coupling: Minimal dependencies
-- Stable interfaces: Well-defined APIs
-
-## Status
-
-- Architecture: Designed
-- Implementation: Scaffold (metadata only)
-- Testing: Descriptor contract only
+The descriptor tests check package identity and the declared `scaffold` status
+only; they do not exercise display locking, power management, or screensaver
+behavior.
